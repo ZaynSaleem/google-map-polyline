@@ -4,7 +4,7 @@ const AutoComplete = (props) => {
   return (
     <div>
       <Autocompletes
-        apiKey={"YOUR MAP API KEY HERE"}
+        apiKey={"YOUR API KEY HERE"}
         onPlaceSelected={(place) =>
           props.setLocation({
             lat: place.geometry.location.lat(),

@@ -11,6 +11,7 @@ const MapComp = ({ location, setLocation }) => {
   const ButtonComp = ({ icon }) => <div>{icon}</div>;
   const [zoom, setzoom] = useState(13);
   const [status, setStatus] = useState(null);
+  
 
   const getLocation = () => {
     if (!navigator.geolocation) {
@@ -41,7 +42,7 @@ const MapComp = ({ location, setLocation }) => {
       {location ? (
         <GoogleMapReact
           bootstrapURLKeys={{
-            key: "YOUR MAP API KEY HERE",
+            key: "API KEY HERE",
             libraries: ["places"],
           }}
           center={location}
